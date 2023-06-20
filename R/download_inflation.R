@@ -8,7 +8,7 @@ download.file(
   inflation_raw_path
 )
 inflation_raw <-
-  readxl::read_xlsx(here("data", "raw", "inflation.xlsx"), sheet = 4)
+  readxl::read_xlsx(here("data", "raw", "inflation.xlsx"), sheet = 1)
 readr::write_rds(inflation_raw,
                  fs::path_ext_set(inflation_raw_path, "rds"),
                  compress = "gz")
